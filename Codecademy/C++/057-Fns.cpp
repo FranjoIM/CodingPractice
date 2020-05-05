@@ -1,11 +1,24 @@
 #include <iostream>
-#include "fns.hpp"
+#include <cmath>
 
+double average(double num1, double num2) {
+  return (num1 + num2) / 2;
+}
 
-int main() {
+int tenth_power(int num) {
+  return pow(num, 10);
+}
+
+bool is_palindrome(std::string text) {
+  std::string reversed_text = "";
   
-  std::cout << is_palindrome("noon") << "\n";
-  std::cout << tenth_power(4) << "\n";
-  std::cout << average(4.0, 7.0) << "\n";
+  for (int i = text.size() - 1; i >= 0; i--) {
+    reversed_text += text[i];
+  }
   
+  if (reversed_text == text) {
+    return true;
+  }
+  
+  return false;
 }
