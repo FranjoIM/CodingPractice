@@ -10,7 +10,7 @@ void name_x_times(std::string name, int x){
 
 int main() {
   
-  std::string my_name = "Franjo Ivankoovic";
+  std::string my_name = "Franjo Ivankovic";
   int some_number = 100; // Change this if you like!
   // Call name_x_times() below with my_name and some_number
   name_x_times(my_name, some_number);
